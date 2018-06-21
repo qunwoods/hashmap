@@ -19,7 +19,7 @@
 	* 采用哈希表进行存储，采用链地址法解决冲突：
 	* HashMap的底层是一个数组（table），数组中的每一项是一个链表（Node），每个Map.Entry是一个键值对，Node实现了Map.Entry，还包含一个指向下一个元素的引用（链表）；
 	* 结构定义
-	[image:https://github.com/qunwoods/hashmap/blob/master/18FA4CAD-55CA-4D69-92EE-D31F83F5E5B8.png]
+	[structure]:https://github.com/qunwoods/hashmap/blob/master/18FA4CAD-55CA-4D69-92EE-D31F83F5E5B8.png
 	
 ```java
  /**
