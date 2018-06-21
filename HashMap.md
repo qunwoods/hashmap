@@ -9,7 +9,8 @@
 
 ### 性能
 	* get和put的时间复杂度为O(1)；
-	* 	capacity & load factor：hash table容量被初始化为capacity，load factor表示hash table的最大饱和度，当hash table中的元素超过 capacity *  load factor，hash table会被重构；
+	* capacity & load factor：hash table容量被初始化为capacity，load factor表示hash table的最大饱和度，当hash table中的元素超过 capacity 
+	*  load factor，hash table会被重构；
 
 ### 关于线程同步
 	* HashMap未实现同步，当多个线程同时访问且至少一个线程执行修改时，需要外部实现线程同步；
@@ -18,6 +19,8 @@
 	* 采用哈希表进行存储，采用链地址法解决冲突：
 	* HashMap的底层是一个数组（table），数组中的每一项是一个链表（Node），每个Map.Entry是一个键值对，Node实现了Map.Entry，还包含一个指向下一个元素的引用（链表）；
 	* 结构定义
+	[image:5C580703-948D-43EE-805D-524DCFCFA3A8-356-000050D8E3110A25/18FA4CAD-55CA-4D69-92EE-D31F83F5E5B8.png]
+	
 ```java
  /**
      * The table, initialized on first use, and resized as
