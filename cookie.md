@@ -10,21 +10,14 @@
 	* 定制个性化页面；
 	* 记录用户操作；
 ### cookie使用
-	* 	浏览器向web服务器发送请求时，会读取本地存储的cookie文件内容（包括过期时间和路径），一起发送给服务器；
-	
-![](cookie/0D060B81-0A7A-4F1B-B6E0-17C4C8AC5F6A.png)
+	* 浏览器向web服务器发送请求时，会读取本地存储的cookie文件内容（包括过期时间和路径），一起发送给服务器；
 
 ### 服务器设置和获取cookie
 	* 文件目录：
-		1. ServletSetCookie：服务器将cookie内容保存在浏览器所在的客户端；
-	
-![](cookie/A83A8044-66FC-4900-8624-A8B5D0FCAEFA.png)
-
-		2. ServletGetCookie：由于保存cookie后，浏览器发送请求会在header中带上cookie信息，所以直接从request中获取cookie即可；
-![](cookie/0B339689-F3A5-4E32-B3DE-5606EE90F3C4.png)
-
-		3. CookieInput.html：输入姓名和密码，提交表单至服务器；
-	* 	具体实现：
+	1. ServletSetCookie：服务器将cookie内容保存在浏览器所在的客户端；
+	2. ServletGetCookie：由于保存cookie后，浏览器发送请求会在header中带上cookie信息，所以直接从request中获取cookie即可；
+	3. CookieInput.html：输入姓名和密码，提交表单至服务器；
+	* 具体实现：
 ```java
 ／*CookieInput.html*／
 <!DOCTYPE html>
