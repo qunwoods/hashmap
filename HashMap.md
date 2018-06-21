@@ -17,7 +17,6 @@
 ### HashMap数据结构
 	* 采用哈希表进行存储，采用链地址法解决冲突：
 	* HashMap的底层是一个数组（table），数组中的每一项是一个链表（Node），每个Map.Entry是一个键值对，Node实现了Map.Entry，还包含一个指向下一个元素的引用（链表）；
-	![](HashMap/18FA4CAD-55CA-4D69-92EE-D31F83F5E5B8.png)
 	* 结构定义
 ```java
  /**
@@ -49,7 +48,6 @@
 		* 判断为链表：
 			* 遍历链表，在链表中搜索key，若当前元素已存在，更新当前元素的值，若不存在，挂在链表末尾；
 			* 遍历中判断链表长度是否达到转红黑树的阀值，若已达到则进行转换；
-	![](HashMap/E7A89B6F-7D7E-4FE6-91BE-1ACF51407214.png)
 
 ```java
 /**
@@ -116,7 +114,6 @@
 ### 扩容
 [Java8系列之重新认识HashMap - ImportNew](http://www.importnew.com/20386.html)
 - [ ] 扩容相对比较复杂，还没有看懂～
-![](HashMap/BFBC0CFF-3874-4A52-9637-373CB7049720.png)
 
 
 ### get过程分析
